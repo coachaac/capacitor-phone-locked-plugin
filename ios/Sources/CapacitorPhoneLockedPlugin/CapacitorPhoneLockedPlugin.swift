@@ -10,14 +10,13 @@ public class CapacitorPhoneLockedPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "CapacitorPhoneLockedPlugin"
     public let jsName = "CapacitorPhoneLocked"
     public let pluginMethods: [CAPPluginMethod] = [
-        CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "checkPhoneLocked", returnType: CAPPluginReturnPromise)
     ]
     private let implementation = CapacitorPhoneLocked()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+    @objc func checkPhoneLocked(_ call: CAPPluginCall) {
         call.resolve([
-            "value": implementation.echo(value)
+            "value": implementation.checkPhoneLocked()
         ])
     }
 }

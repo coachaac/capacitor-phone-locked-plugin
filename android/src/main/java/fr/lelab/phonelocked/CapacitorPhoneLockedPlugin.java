@@ -12,11 +12,12 @@ public class CapacitorPhoneLockedPlugin extends Plugin {
     private CapacitorPhoneLocked implementation = new CapacitorPhoneLocked();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
+    public void checkPhoneLocked(PluginCall call) {
 
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+
+
+        ret.put("value", implementation.checkPhoneLocked(getContext()));
         call.resolve(ret);
     }
 }

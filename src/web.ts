@@ -6,8 +6,8 @@ export class CapacitorPhoneLockedWeb
   extends WebPlugin
   implements CapacitorPhoneLockedPlugin
 {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async checkPhoneLocked(): Promise<{ value: string }> {
+    console.log('PhoneLocked undefined for this device');
+    return  {value: 'unknown'};
   }
 }

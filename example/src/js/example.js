@@ -1,6 +1,12 @@
 import { CapacitorPhoneLocked } from 'capacitor-phone-locked';
 
 window.testEcho = () => {
-    const inputValue = document.getElementById("echoInput").value;
-    CapacitorPhoneLocked.echo({ value: inputValue })
+    CapacitorPhoneLocked.checkPhoneLocked().then((lockValue)=>
+    {
+        console.log("Lock device value: ", lockValue);
+    }),
+    err =>{
+        console.log("Error getting device locxk status")
+    };
+
 }
