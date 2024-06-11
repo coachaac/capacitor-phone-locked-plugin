@@ -1,6 +1,6 @@
 # capacitor-phone-locked
 
-test if phone is protected by any means (code/paswordd ...)
+Test if phone is protected by any means (code/paswordd ...)
 
 ## Install
 
@@ -15,8 +15,6 @@ npx cap sync
 * [`checkPhoneLocked()`](#checkphonelocked)
 
 
- JSDoc comments and rerun docgen to update the docs below-->
-
 ### checkPhoneLocked()
 
 ```typescript
@@ -24,7 +22,9 @@ checkPhoneLocked() => Promise<{ value: string; }>
 ```
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
 * yes: phone is lock protected
+
 * no: phone not lock protected
 
 --------------------
