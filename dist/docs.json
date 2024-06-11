@@ -1,0 +1,25 @@
+{
+  "api": {
+    "name": "CapacitorPhoneLockedPlugin",
+    "slug": "capacitorphonelockedplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "checkPhoneLocked",
+        "signature": "() => Promise<{ value: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "checkphonelocked"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
