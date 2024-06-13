@@ -5,7 +5,7 @@ Test if phone is protected by any means (code/paswordd ...)
 ## Install
 
 ```bash
-npm install https://bitbucket.org/smartpilotteam/capacitor-phone-locked-plugin
+npm install https://github.com/coachaac/capacitor-phone-locked-plugin
 npx cap sync
 ```
 
