@@ -1,7 +1,8 @@
 # capacitor-phone-locked
 
 Test if phone is protected by any means (code/password ...)
-version 1.0.0 Capacitor 5 
+
+- version 1.0.0 Capacitor 5 
 
 ## Install
 
